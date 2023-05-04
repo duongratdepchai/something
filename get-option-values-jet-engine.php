@@ -44,3 +44,4 @@ $value       = isset( $all_options['option-name'] ) ? $all_options['option-name'
  * option-name - replace this with your option Name/ID
  */
  $value = get_option( 'page-slug_option-name' );
+?>
